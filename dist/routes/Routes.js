@@ -17,7 +17,7 @@ exports.App.use((0, cors_1.default)({
     origin: '*',
     methods: ['POST', 'PUT', 'GET'],
     credentials: true,
-    allowedHeaders: ['Authorization', 'Bearer']
+    allowedHeaders: ['Authorization', 'Bearer', 'Content-Type']
 }));
 exports.App.post('/auth/login', login_1.default);
 exports.App.get('/ingressos', ingressos_controller_1.default.List);
