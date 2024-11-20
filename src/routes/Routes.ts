@@ -12,7 +12,7 @@ App.use(cors({
   origin:'*',
   methods:['POST', 'PUT', 'GET'],
   credentials:true,
-  allowedHeaders:['Authorization', 'Bearer']
+  allowedHeaders: ['Authorization', 'Bearer', 'Content-Type']
 }))
 
 App.post('/auth/login', Login);
