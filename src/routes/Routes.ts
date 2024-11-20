@@ -9,7 +9,7 @@ export const App = express();
 App.use(express.json());
 App.use(express.urlencoded({extended:true}));
 App.use(cors({
-  origin:['*'],
+  origin:'*',
   methods:['POST', 'PUT', 'GET'],
   credentials:true,
   allowedHeaders:['Authorization', 'Bearer']
