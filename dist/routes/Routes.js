@@ -14,7 +14,7 @@ exports.App = (0, express_1.default)();
 exports.App.use(express_1.default.json());
 exports.App.use(express_1.default.urlencoded({ extended: true }));
 exports.App.use((0, cors_1.default)({
-    origin: ['*'],
+    origin: '*',
     methods: ['POST', 'PUT', 'GET'],
     credentials: true,
     allowedHeaders: ['Authorization', 'Bearer']
